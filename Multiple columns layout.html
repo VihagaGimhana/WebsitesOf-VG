@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Columns layout</title>
+    <Style>
+        .container{
+            column-count: 3;
+            font-size: 20px;
+        }
+        .container2{
+            column-width: 300px;
+            font-size: 20px;
+        }
+        .container3{
+            font-size: 20px;
+            column-count: 3;
+            column-gap: 20px;
+            column-rule: 4px solid yellow;
+        }
+        .container4{
+            font-size: 20px;
+            column-count: 3;
+            column-gap: 20px;
+            column-rule: 5px solid green;
+        }
+        .container4 h2{
+            column-span: all;
+        }
+        .full-container{
+            margin-top: 50px;
+            column-width: 300px;
+            column-gap: 20px;
+        }
+        .inside{
+            border: 3px double lightseagreen;
+            background-color: lightgreen;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .inside p{
+            font-size: 20px;
+        }
+        .main-head{
+            column-span: all;
+            font-size: 30px;
+        }
+        .full-container-2{
+            margin-top: 50px;
+            column-width: 300px;
+            column-gap: 20px;
+        }
+        .inside-1{
+            break-inside: avoid;
+            page-break-inside: avoid;
+            border: 3px double lightseagreen;
+            background-color: lightgreen;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .inside-1 p{
+            font-size: 20px;
+        }
+    </Style>
+</head>
+<body>
+    <div>
+        <h1>Plum Blossoms(column-count)</h1>
+        <div class="container">
+            Prunus mume is an East Asian and Southeast Asian tree species classified in the Armeniaca section of the genus Prunus subgenus Prunus. Its common names include Chinese plum, Japanese plum, and Japanese apricot. The flower, long a beloved subject in the traditional painting and poetry of East Asia and Vietnam, is usually called plum blossom. This distinct tree species is related to both the plum and apricot trees.  Although generally referred to as a plum in English, it is more closely related to the apricot. In East Asian cuisine (Chinese, Japanese and Korean) and Vietnamese cuisine, the fruit of the tree is used in juices, as a flavouring for alcohol, as a pickle and in sauces. <br>
+            It is also used in traditional medicine.The tree's flowering in late winter and early spring is highly regarded as a seasonal symbol.Prunus mume should not be confused with Prunus salicina, a related species also grown in China, Japan, Korea and Vietnam. Another tree, Prunus japonica, is also a separate species despite having a Latin name similar to Prunus mume's common name.
+        </div>
+    </div>
+
+    <div>
+        <h1>Plum Blossoms(column-width)</h1>
+        <div class="container2">
+            Prunus mume is an East Asian and Southeast Asian tree species classified in the Armeniaca section of the genus Prunus subgenus Prunus. Its common names include Chinese plum, Japanese plum, and Japanese apricot. The flower, long a beloved subject in the traditional painting and poetry of East Asia and Vietnam, is usually called plum blossom. This distinct tree species is related to both the plum and apricot trees. Although generally referred to as a plum in English, it is more closely related to the apricot. In East Asian cuisine (Chinese, Japanese and Korean) and Vietnamese cuisine, the fruit of the tree is used in juices, as a flavouring for alcohol, as a pickle and in sauces. <br>
+            It is also used in traditional medicine.The tree's flowering in late winter and early spring is highly regarded as a seasonal symbol.Prunus mume should not be confused with Prunus salicina, a related species also grown in China, Japan, Korea and Vietnam. Another tree, Prunus japonica, is also a separate species despite having a Latin name similar to Prunus mume's common name.
+        </div>
+    </div>
+
+    <div>
+        <h1>Plum Blossoms(column-gap/column-rule)</h1>
+        <div class="container3">
+            Prunus mume is an East Asian and Southeast Asian tree species classified in the Armeniaca section of the genus Prunus subgenus Prunus. Its common names include Chinese plum, Japanese plum, and Japanese apricot. The flower, long a beloved subject in the traditional painting and poetry of East Asia and Vietnam, is usually called plum blossom. This distinct tree species is related to both the plum and apricot trees. Although generally referred to as a plum in English, it is more closely related to the apricot. In East Asian cuisine (Chinese, Japanese and Korean) and Vietnamese cuisine, the fruit of the tree is used in juices, as a flavouring for alcohol, as a pickle and in sauces. <br>
+            It is also used in traditional medicine.The tree's flowering in late winter and early spring is highly regarded as a seasonal symbol.Prunus mume should not be confused with Prunus salicina, a related species also grown in China, Japan, Korea and Vietnam. Another tree, Prunus japonica, is also a separate species despite having a Latin name similar to Prunus mume's common name.
+        </div>
+    </div>
+
+    <div>
+        <h1>Plum Blossoms(column-span)</h1>
+        <div class="container4">
+            <h2>Something here</h2>
+            Prunus mume is an East Asian and Southeast Asian tree species classified in the Armeniaca section of the genus Prunus subgenus Prunus. Its common names include Chinese plum, Japanese plum, and Japanese apricot. The flower, long a beloved subject in the traditional painting and poetry of East Asia and Vietnam, is usually called plum blossom. This distinct tree species is related to both the plum and apricot trees. Although generally referred to as a plum in English, it is more closely related to the apricot. In East Asian cuisine (Chinese, Japanese and Korean) and Vietnamese cuisine, the fruit of the tree is used in juices, as a flavouring for alcohol, as a pickle and in sauces. <br>
+            It is also used in traditional medicine.The tree's flowering in late winter and early spring is highly regarded as a seasonal symbol.Prunus mume should not be confused with Prunus salicina, a related species also grown in China, Japan, Korea and Vietnam. Another tree, Prunus japonica, is also a separate species despite having a Latin name similar to Prunus mume's common name.
+        </div>
+    </div>
+
+    <section id="Column fragmentation-one">
+        <div class="full-container">
+            <h1 class="main-head">Fragmented Boxes</h1>
+            <div class="inside">
+                <h1>Plum Blossoms</h1>
+                <p>Prunus mume is an East Asian and Southeast Asian tree species classified in the Armeniaca section of the genus Prunus subgenus Prunus. Its common names include Chinese plum, Japanese plum, and Japanese apricot. The flower, long a beloved subject in the traditional painting and poetry of East Asia and Vietnam, is usually called plum blossom.</p>
+            </div>
+            <div class="inside">
+                <h1>Plum Blossoms</h1>
+                <p>Prunus mume is an East Asian and Southeast Asian tree species classified in the Armeniaca section of the genus Prunus subgenus Prunus. Its common names include Chinese plum, Japanese plum, and Japanese apricot. The flower, long a beloved subject in the traditional painting and poetry of East Asia and Vietnam, is usually called plum blossom.</p>
+            </div>
+            <div class="inside">
+                <h1>Plum Blossoms</h1>
+                <p>Prunus mume is an East Asian and Southeast Asian tree species classified in the Armeniaca section of the genus Prunus subgenus Prunus. Its common names include Chinese plum, Japanese plum, and Japanese apricot. The flower, long a beloved subject in the traditional painting and poetry of East Asia and Vietnam, is usually called plum blossom.</p>
+            </div>
+            <div class="inside">
+                <h1>Plum Blossoms</h1>
+                <p>Prunus mume is an East Asian and Southeast Asian tree species classified in the Armeniaca section of the genus Prunus subgenus Prunus. Its common names include Chinese plum, Japanese plum, and Japanese apricot. The flower, long a beloved subject in the traditional painting and poetry of East Asia and Vietnam, is usually called plum blossom.</p>
+            </div>
+            <div class="inside">
+                <h1>Plum Blossoms</h1>
+                <p>Prunus mume is an East Asian and Southeast Asian tree species classified in the Armeniaca section of the genus Prunus subgenus Prunus. Its common names include Chinese plum, Japanese plum, and Japanese apricot. The flower, long a beloved subject in the traditional painting and poetry of East Asia and Vietnam, is usually called plum blossom.</p>
+            </div>
+            <div class="inside">
+                <h1>Plum Blossoms</h1>
+                <p>Prunus mume is an East Asian and Southeast Asian tree species classified in the Armeniaca section of the genus Prunus subgenus Prunus. Its common names include Chinese plum, Japanese plum, and Japanese apricot. The flower, long a beloved subject in the traditional painting and poetry of East Asia and Vietnam, is usually called plum blossom.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="Column-fragmentation-two">
+        <div class="full-container-2">
+            <h1 class="main-head">Setting break inside</h1>
+            <div class="inside-1">
+                <h1>Plum Blossoms</h1>
+                <p>Prunus mume is an East Asian and Southeast Asian tree species classified in the Armeniaca section of the genus Prunus subgenus Prunus. Its common names include Chinese plum, Japanese plum, and Japanese apricot. The flower, long a beloved subject in the traditional painting and poetry of East Asia and Vietnam, is usually called plum blossom.</p>
+            </div>
+            <div class="inside-1">
+                <h1>Plum Blossoms</h1>
+                <p>Prunus mume is an East Asian and Southeast Asian tree species classified in the Armeniaca section of the genus Prunus subgenus Prunus. Its common names include Chinese plum, Japanese plum, and Japanese apricot. The flower, long a beloved subject in the traditional painting and poetry of East Asia and Vietnam, is usually called plum blossom.</p>
+            </div>
+            <div class="inside-1">
+                <h1>Plum Blossoms</h1>
+                <p>Prunus mume is an East Asian and Southeast Asian tree species classified in the Armeniaca section of the genus Prunus subgenus Prunus. Its common names include Chinese plum, Japanese plum, and Japanese apricot. The flower, long a beloved subject in the traditional painting and poetry of East Asia and Vietnam, is usually called plum blossom.</p>
+            </div>
+            <div class="inside-1">
+                <h1>Plum Blossoms</h1>
+                <p>Prunus mume is an East Asian and Southeast Asian tree species classified in the Armeniaca section of the genus Prunus subgenus Prunus. Its common names include Chinese plum, Japanese plum, and Japanese apricot. The flower, long a beloved subject in the traditional painting and poetry of East Asia and Vietnam, is usually called plum blossom.</p>
+            </div>
+            <div class="inside-1">
+                <h1>Plum Blossoms</h1>
+                <p>Prunus mume is an East Asian and Southeast Asian tree species classified in the Armeniaca section of the genus Prunus subgenus Prunus. Its common names include Chinese plum, Japanese plum, and Japanese apricot. The flower, long a beloved subject in the traditional painting and poetry of East Asia and Vietnam, is usually called plum blossom.</p>
+            </div>
+            <div class="inside-1">
+                <h1>Plum Blossoms</h1>
+                <p>Prunus mume is an East Asian and Southeast Asian tree species classified in the Armeniaca section of the genus Prunus subgenus Prunus. Its common names include Chinese plum, Japanese plum, and Japanese apricot. The flower, long a beloved subject in the traditional painting and poetry of East Asia and Vietnam, is usually called plum blossom.</p>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

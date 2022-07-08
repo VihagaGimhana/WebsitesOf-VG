@@ -1,0 +1,87 @@
+body{
+    background-color: #16151d;
+    color: white;
+}
+
+.intro{
+    text-align: center;
+}
+
+.secm{
+    margin-left: 0px;
+}
+
+.select{
+    text-align: center;
+    background-color: #913fe2;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.buttonset{
+    background-color: #6925ac;
+    height: 30px;
+    border-bottom: 5px solid black;
+}
+
+button{
+    height: 30px;
+    width: 100px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.container{
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: justify;
+    font-size: 18px;
+    margin-top:;
+    position: relative;
+    top: 180px;
+    z-index: -1;
+    display:;
+    overflow: hidden;
+}
+
+
+.details h2{
+    margin-left: 0px;
+}
+
+h3{
+    margin-left: 0px;
+}
+
+.examp td{
+    border: 1px solid white;
+    padding: 2px;
+}
+
+.waviy {
+    position:;
+  }
+  .waviy span {
+    position: ;
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+
+div.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: aqua;
+}
+  

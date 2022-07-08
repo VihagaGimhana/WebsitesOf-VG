@@ -1,0 +1,62 @@
+.anim{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: brown;
+    border: 5px solid black;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example{
+    0% {background-color: brown; left: 5px;}
+    100% {background-color: black; right: 5px;}
+}
+
+.sec{
+    width: 100px;
+    height:100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    animation-name: movein;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:inherit;
+}
+
+@keyframes movein {
+    0% {background-color: black; left: 0px; top: 0px;}
+    25% {background-color: red; left: 200px; top: 0px;}
+    50% {background-color: green; left: 200px; top: 200px;}
+    75% {background-color: blue; left: 0px; top: 200px;}
+    100% {background-color: black; left: 0px; top: 0px;}
+}
+
+.third{
+    width: 100px;
+    height:100px;
+    top: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    animation-name: msec;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:inherit;
+}
+
+@keyframes msec {
+    0% {background-color: black; left: 0px; top: 200px;}
+    20% {background-color: red; left: 200px; top: 0px;}
+    40% {background-color: orange; left: 400px; top: 200px;}
+    60% {background-color: green; left: 300px; top: 400px;}
+    80% {background-color: blue; left: 100px; top: 400px;}
+    100% {background-color: black; left: 0px; top: 200px;}
+}

@@ -1,0 +1,43 @@
+.cherry{
+    border: 5px solid black;
+    border-radius: 10px;
+    background: radial-gradient(white, #F549C9);
+    
+    padding: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.ceb{
+    width: 245px;
+    padding-left: 10px;
+}
+
+.pic{
+    background-color:rgb(240, 155, 183);
+}
+
+.bloom{
+    padding: 10px;
+    text-align: justify;
+}
+
+.para{
+    padding-left: 10px;
+    font-size: large;
+}
+
+.til{
+    padding-left: 10px;
+}
+
+.main{
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 485px;
+    margin-left: 485px;
+    margin-top: 225px;
+    background: lightgray;
+}

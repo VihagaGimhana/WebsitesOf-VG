@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <Style>
+        body{
+            background-color: wheat;
+        }
+        h1{
+            font-size: 2rem;
+            text-align: center;
+        }
+        @media (min-width:1000px){
+            h1{
+                font-size: 4rem;
+            }
+            h2{
+                font-size: 2.5rem;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+            .m-l-t{
+            font-size: 4rem;
+        }
+        }
+        @media (min-width:800px){
+            .col1{
+                width: 30%;
+                float: left;
+            }
+            .col2{
+                width: 60%;
+                float: right;
+            }
+            
+        }
+
+        .container-1{
+            max-width: 100%;
+            column-span: all;
+        }
+        .col3{
+            column-width: 400px;
+        }
+        .col4{
+            column-count: 2;
+        }
+        .container-2{
+            display: flex;
+        }
+        .col5{
+            flex: 1;
+            margin-right: 2.5%;
+        }
+        .col6{
+            flex: 1;
+        }
+        .flexb{
+            column-span: all;
+        }
+        .container-3{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            column-gap: 5%;
+        }
+        .Cherry-blossoms{
+            max-width: 75%;
+        }
+    </Style>
+</head>
+<body>
+    <h1>
+        This is the experiment of responsive web design
+    </h1>
+    <div class="container-1">
+    <h2>Using Flexible grids</h2>
+    <p class="col1">Now, I will be using Flexible grids to setup responsiveness of the website</p>
+    <p class="col2">In this mainly use "Float" to setup responsiveness. This is used like which side of webpage you want to float this. This is the example I use to show you that. <strong>You can change the width of webpage to look if it's working alright.</strong> </p>
+    </div>
+    <h1 class="m-l-t">Modern language technologies</h1>
+    <div class="container-1">
+        <h2>Using Multicol</h2>
+        <p class="col3">Now, I will be using Multicol function in modern layout technologies</p>
+        <p class="col4">In this we use "Column Width" & "Column Count" css functions. "Column Count" to decide how many columns we need. "Column Width" to decide how much width our column should be. There are also "Column gap", "Column rule" & "Column span". This is the example I use to show you that. <strong>You can change the width of webpage to look if it's working alright.</strong> </p>
+    </div>
+    <div class="container-1">
+        <h2 class="flexb">Using Flexbox</h2>
+        <div class="container-2">
+        <p class="col5">Now, I will be using Flexbox function in modern layout technologies</p>
+        <p class="col6">In this we dispaly main content as flex and give sub content flex value. This is the example I use to show you that. <strong>You can change the width of webpage to look if it's working alright.</strong></p>
+        </div>
+    </div>
+    <div class="container-1">
+        <h2>Using CSS grid</h2>
+        <div class="container-3">
+        <p class="col7">Now, I will be using css grid function in modern layout technologies</p>
+        <p class="col8">In CSS Grid Layout the "fr" unit allows the distribution of available space across grid tracks. The next example creates a grid container with three tracks sized at 1fr. This will create three column tracks, each taking one part of the available space in the container. This is the example I use to show you that. <strong>You can change the width of webpage to look if it's working alright.</strong> </p>
+        </div>
+    </div>
+    <div class="container-1">
+        <h2>Using responsive images</h2>
+        <p class="col9">Now, I will be using responsive image function.
+        In this we use max-width as a value of percentage. This is the example I use to show you that. <strong>You can change the width of webpage to look if it's working alright.</strong> </p>
+        <img src="Cherry-blossoms.jpg" alt="Cherry-blossoms" class="Cherry-blossoms">
+    </div>
+</body>
+</html>

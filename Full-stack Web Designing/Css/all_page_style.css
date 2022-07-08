@@ -1,0 +1,147 @@
+body{
+    background-color: #16151d;
+    color: white;
+}
+
+.second-head{
+    font-size: 25px;
+}
+
+.main-head{
+    text-align: center;
+    background-color: #913fe2;
+    position: relative;
+    top: 0px;
+    height: max-content;
+    width: 100%;
+    padding-top: 2.5px;
+    padding-bottom: 10px;
+    text-shadow:#16151d 1px 1px 1px;
+    width: 100%;
+}
+
+.navigation{
+    text-align: center;
+    background-color: #6925ac;
+    height: auto;
+    border-bottom: 5px solid black;
+    width: 100%;
+    
+}
+
+.navigation button{
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    font-size: 16px;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+nav{
+  position: -webkit-sticky;
+  position: fixed;
+  top: 150px;
+}
+
+/*Head animation starts here*/
+  .waviy span {
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+/*Head animation ends here*/
+
+/*Second head animation starts here*/
+.second-head-waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 60px;
+  }
+  .second-head-waviy span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+  
+    
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+/*Second head animation ends here*/
+
+/*Right side navigation bar css starts here*/
+.right-navigation-bar{
+  border-left: 5px solid #6925ac;
+  padding-left: 10px;
+  margin-top: 0px;
+  position: fixed;
+ right: 15px;
+}
+
+.right-navigation-bar dt{
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+
+.right-navigation-bar dd{
+  font-size: 20px;
+  padding-bottom: 3px;
+}
+
+.right-nav-dt{
+  padding-top: 10px;
+}
+
+.right-navigation-bar a{
+  text-decoration: none;
+  color: white;
+}
+.right-navigation-bar a:hover{
+  color: rgb(231, 60, 244);
+}
+/*Right side navigation bar css ends here*/
+
+/*CSS for main-style class starts here*/
+.main-content {
+  font-size: 20px;
+  text-align: justify;
+  width: 82%;
+  height: 540px;
+  overflow:auto;
+  margin-top: 200px;
+  padding-right: 10px;
+}
+
+.main-content::-webkit-scrollbar{
+  display: none;
+}
+
+.main-content h1{
+  text-align: center;
+}
+/*CSS for main-style class ends here*/
+
+
+
+
+
+
+

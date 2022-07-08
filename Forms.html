@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .form01{display: table;
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: aquamarine;}
+
+        .yourname,.youremail{display: table-row;}
+
+        label,input{display: table-cell; margin-bottom: 10px;}
+
+        label {padding-right: 5px;}
+
+        input{border-radius: 5px;}
+    </style>
+</head>
+<body>
+    <h1>Forms</h1>
+    <p>Today I'm going to make a form</p>
+        <form action="" method="get" class="form01">
+            <!--To input your name-->
+            <div class="yourname">
+                <label for="name">Your Name:</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <!--To input your email-->
+            <div class="youremail">
+                <label for="email">Your Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <!--Subscribe button-->
+            <div class="subscribe">
+                <input type="submit" value="subscribe!">
+            </div>
+        </form>
+</body>
+</html>

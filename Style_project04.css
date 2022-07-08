@@ -1,0 +1,11 @@
+.letter{
+    border: 5px solid black;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 10px;
+}
+
+.red{
+    margin-left: 500px;
+}

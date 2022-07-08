@@ -1,0 +1,12 @@
+/*Navigation bar css starts here*/
+.main-navigation ul{
+    list-style: none;
+    background-color: green;
+    width: 100%;
+}
+.main-navigation li{
+    float: left;
+    padding: 3px;
+    border: 4px solid green;
+}
+/*Navigation bar css ends here*/

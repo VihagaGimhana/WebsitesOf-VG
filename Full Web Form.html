@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full web Form</title>
+        <style>
+            form{
+                background-color: rgb(230, 230, 230);
+                margin-left: 500px;
+            }
+            .paymentf{
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+            }
+            ul{
+                list-style: none;
+            }
+            form{
+                width: 500px;
+            }
+            fieldset{
+                   margin-right: 0px;
+                   margin-left: 125px;
+                   width: 200px;
+            }
+            label{text-align: left;}
+            .bbb{margin-left: 170px;}
+            .ccc{margin-left: 125px;}
+            h1{margin-left: 140px;}
+            .firstpara {margin-left: 100px;}
+            .pawd{width: 140px;}
+        </style>
+</head>
+
+<body>
+    <Form class="paymentf">
+        <section>
+        <h1>Paymont Application</h1>
+        <p class="firstpara">Required Field's are followed by the Company</p>
+        
+            <h1>Contact Information</h1>
+            <Fieldset>
+                <legend>Title</legend>
+            <ul>
+                <li>
+                    <label for="title01">
+                    <input type="radio" name="title01" id="title01">King
+                    </label>
+                    </li>
+                    <li>
+                         <label for="title02">
+                        <input type="radio" name="title02" id="title01">Queen
+                         </label>
+                    </li>
+                    <li>
+                        <label for="title03">
+                        <input type="radio" name="title03" id="title01">Joker
+                        </label>
+                    </li>
+                </li>
+            </ul>
+        </div>
+    </Fieldset>
+    <table>
+        <tr>
+    <p><div class="ccc">
+        <label for="name">
+            <span>Name:</span>
+            <strong><abbr title="required">*</abbr></strong>
+            <input type="text" name="name" id="username">
+        </label></div>
+    </p>
+        </tr>
+        <tr>
+    <p><div class="ccc">
+        <label for="name">
+            <span>Email:</span>
+            <strong><abbr title="required">*</abbr></strong>
+            <input type="email" name="email" id="usermail">
+        </label></div>
+    </p>
+        </tr>
+        <tr>
+    <p><div class="ccc">
+        <label for="name">
+            <span>Password:</span>
+            <strong><abbr title="required">*</abbr></strong>
+            <input type="password" name="password" id="pwd" class="pawd">
+        </label></div>
+    </p>
+        </tr>       
+</table>
+        </section>
+
+<!--Section 02 Start here-->
+        <section>
+            <h1>Paymont Information</h1>
+        <div class="payalign">
+            <p><div class="ccc">
+                <label for="card">
+                    <span>Card Type:</span>
+                </label>
+                <select name="card" id="usercard">
+                    <option value="Visa">Visa</option>
+                    <option value="mc">Mastercard</option>
+                    <option value="amex">American Express</option>
+                </select></div>
+            </p>
+            <p><div class="ccc">
+                <label for="number">
+                    <span>Card Number:</span>
+                </label>
+                <input type="tel" name="cardnumber" id="number" required></div>
+            </p>
+            <p><div class="ccc">
+                <label for="exdate">
+                    <span>Expiration Date:</span>
+                </label>
+                <input type="text" name="Expiredate" id="exdate" required="true"
+                 placeholder="MM/YY" pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$"></div>
+            </p>
+        </div>
+        </section>
+<!--Last Section-->
+        <section>
+            <p><div class="bbb">
+            <button type="submit">Submit the Payment</button></div>
+            </p>
+        </section>
+    </Form>    
+</body>
+</html>

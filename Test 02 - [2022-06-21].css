@@ -1,0 +1,91 @@
+header h1{
+    text-align: center;
+}
+
+nav{
+    border: 3px solid black;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #9ae5f5;
+    box-shadow: 3px 2px 2px rgb(37, 29, 29);
+}
+
+.layer_one{
+    border: 2px solid black;
+    padding: 5px;
+    position: absolute;
+    top: 140px;
+    width:98%;
+    height: 500px;
+    font-size: 20px;
+    background-color: rgb(192, 135, 245);
+    text-align: center;
+    box-shadow: 3px 2px 2px rgb(37, 29, 29);
+}
+
+.box_one{
+    border: 2px solid black;
+    position:absolute;
+    left: 100px;
+    padding: 20px;
+    height :445px;
+    width: 150px;
+    background-color: #358597;
+    box-shadow: 3px 2px 2px rgb(37, 29, 29);
+}
+
+.first_one{
+    border: 1px solid black;
+    padding: 5px; 
+    height: 150px;
+    background-color: #f4a896;
+    box-shadow: 3px 2px 2px rgb(37, 29, 29);
+}
+
+.sec_one{
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 80px;
+    height: 150px;
+    background-color: #f4a896;
+    box-shadow: 3px 2px 2px rgb(37, 29, 29);
+}
+
+.box_three{
+    border: 2px solid black;
+    position:absolute;
+    right: 100px;
+    top:275px;
+    padding: 20px;
+    width: 150px;
+    height: 175px;
+    background-color: #358597;
+    box-shadow: 3px 2px 2px rgb(37, 29, 29);
+}
+
+.third_one{
+    border: 1px solid black;
+    padding: 5px;
+    height: 150px;
+    background-color: #f4a896;
+    box-shadow: 3px 2px 2px rgb(37, 29, 29);
+}
+
+.box_two{
+    border: 2px solid black;
+    position:absolute;
+    right: 100px;
+    padding: 20px;
+    width: 150px;
+    height: 175px;
+    background-color: #358597;
+    box-shadow: 3px 2px 2px rgb(37, 29, 29);
+}
+
+.forth_one{
+    border: 1px solid black;
+    padding: 5px;
+    height: 150px;
+    background-color: #f4a896;
+    box-shadow: 3px 2px 2px rgb(37, 29, 29);
+}
