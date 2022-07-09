@@ -1,12 +1,44 @@
+body{
+    margin: 0px;
+}
+
 /*Navigation bar css starts here*/
-.main-navigation ul{
+.main-fgnavigation ul{
     list-style: none;
     background-color: green;
     width: 100%;
+    padding: 0px;
+    position: -webkit-sticky;
+    position: sticky;
 }
-.main-navigation li{
+.main-nasvigation li{
     float: left;
     padding: 3px;
     border: 4px solid green;
+    background-color: aquamarine;
 }
+.two{
+    display: block;
+}
+
+ul{list-style-type:square;}
+ul.one{list-style-type:none;
+   margin:0;
+   padding:0;
+   overflow:hidden;
+   background-color:#345;
+   position:-webkit-sticky;
+   position:sticky;
+   top:0;
+   border-top:3px solid black;}
+li.two{float:left;}
+li.two a{display:block;
+     color:white;
+     text-align:center;
+     padding:14px 16px;
+     text-decoration:none;}
+li.two a:hover{background-color:blue;}
+.active{background-color:green;}
+li.list{font-weight:bold;
+        font-size:30;}
 /*Navigation bar css ends here*/
