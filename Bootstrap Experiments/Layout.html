@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Bootstrap Layout</title>
     <link rel="stylesheet" href="bootstrap.css">
 </head>
 <body>
     <div class="container">
-    <h1 class="text-center">This is the first experiment</h1>
+    <h1 class="text-center">This is the experiment of bootstrap layout</h1>
     <p class="text-center">In this article, instead of a grammar tip, we’re taking a closer look at a key part of any written text, the paragraph. Paragraphs should be more than just a collection of sentences, but what is the purpose of paragraph structure and how does it impact the paper as a whole?
 
     Before considering how to structure a paragraph, it is helpful to understand the role that paragraphs play in a manuscript. In the broadest terms, a paragraph presents a complete thought. If a paragraph is written well, its main message can be understood without the need for preceding or following material. Paragraphs that are well designed can help a writer construct an argument in stages and can be thought of as signposts to guide a reader through the argument.</p>
@@ -250,7 +250,136 @@
           <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
         </div>
       </div>
+<br><br><br>   
+      <div class="col-3 bg-light p-3 border">
+        .col-3: width of 25%
+      </div>
+      <div class="col-sm-9 bg-light p-3 border">
+        .col-sm-9: width of 75% above sm breakpoint
+      </div>
+<br><br><br>  
+      <div class="clearfix">
+        <img src="..." class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
       
+        <p>
+          A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+        </p>
+      
+        <p>
+          As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+        </p>
+      
+        <p>
+          And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+        </p>
+      </div>
+<br><br><br>
+      <div class="container px-4">
+        <div class="row gx-5">
+          <div class="col">
+           <div class="p-3 border bg-success">Custom column padding</div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-success">Custom column padding</div>
+          </div>
+        </div>
+      </div>
+<br><br><br>
+      <div class="container overflow-hidden">
+        <div class="row gx-5">
+          <div class="col">
+           <div class="p-3 border bg-warning">Custom column padding</div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-warning">Custom column padding</div>
+          </div>
+        </div>
+      </div>
+<br><br><br>
+      <div class="container overflow-hidden">
+        <div class="row gy-5 bg-info">
+          <div class="col-6">
+            <div class="p-3 border bg-light">Custom column padding</div>
+          </div>
+          <div class="col-6">
+            <div class="p-3 border bg-light">Custom column padding</div>
+          </div>
+          <div class="col-6">
+            <div class="p-3 border bg-light">Custom column padding</div>
+          </div>
+          <div class="col-6">
+            <div class="p-3 border bg-light">Custom column padding</div>
+          </div>
+        </div>
+      </div>
+<br><br><br>
+      <div class="container bg-secondary">
+        <div class="row g-2">
+          <div class="col-6">
+            <div class="p-3 border bg-light">Custom column padding</div>
+          </div>
+          <div class="col-6">
+            <div class="p-3 border bg-light">Custom column padding</div>
+          </div>
+          <div class="col-6">
+            <div class="p-3 border bg-light">Custom column padding</div>
+          </div>
+          <div class="col-6">
+            <div class="p-3 border bg-light">Custom column padding</div>
+          </div>
+        </div>
+      </div>
+<br><br><br>
+      <div class="container bg-warning">
+        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+          <div class="col">
+            <div class="p-3 border bg-light">Row column</div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-light">Row column</div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-light">Row column</div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-light">Row column</div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-light">Row column</div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-light">Row column</div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-light">Row column</div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-light">Row column</div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-light">Row column</div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-light">Row column</div>
+          </div>
+        </div>
+      </div>
+<br><br><br>
+      <div class="row g-0 bg-info">
+        <div class="col-sm-6 col-md-8">.col-sm-6 .col-md-8</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+      </div>
+<br><br><br>
+      <div class="grid">
+        <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
+        <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
+        <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
+      </div>
+<br><br><br>
+      <div class="grid">
+        <div class="g-col-3 g-start-2">.g-col-3 .g-start-2</div>
+        <div class="g-col-4 g-start-6">.g-col-4 .g-start-6</div>
+      </div>
 
 <br><br><br><br><br><br>
 </body>
