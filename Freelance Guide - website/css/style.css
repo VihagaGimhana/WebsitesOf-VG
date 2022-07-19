@@ -1,0 +1,12 @@
+a{
+    background-color: red;
+    color: white;
+    box-shadow: 5px 5px 2px black;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16pt;
+    font-weight: bold;
+    font-style: italic;
+}
