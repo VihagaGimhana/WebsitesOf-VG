@@ -1,12 +1,84 @@
-a{
-    background-color: red;
-    color: white;
-    box-shadow: 5px 5px 2px black;
+body{
+    margin:1px;
+}
+.nav{
+    background-color: yellowgreen;
+    padding: 5px;
+    border: 2px double black;
+    box-shadow: 2px 2px 3px green;
+    margin: 0 5% 0 5%;
+}
+.nav a{
+    text-decoration: none;
+    color:black;
+    padding: 5px;
+    font-size: 15pt;
+}
+.nav a:hover{
+    color: yellow;
+    background-color: blueviolet;
 }
 
-p{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16pt;
-    font-weight: bold;
-    font-style: italic;
+.whole{
+    background-color: aquamarine;
+}
+
+.mhead{
+    background-color: rgb(211, 248, 156);
+    border: 5px solid black;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0.5%;
+    box-shadow: 2px 3px black;
+    padding: 15px 0px 15px 0px;
+}
+.phead{
+    text-shadow: 2px 1px 2px rgb(1, 79, 1);
+    text-align: center;
+    color: green;
+    font-size: 40pt;
+    margin-bottom: 0px;
+}
+.shead{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 20pt;
+}
+
+.container{
+    margin: 0 5% 0 5%;
+}
+
+/*Animation starts here*/
+.mhead h1{
+    animation:multicolor 2s infinite;
+    animation-delay: 2s;
+    
+}
+@keyframes multicolor {
+    0%{
+        color: green;
+    }
+    25%{
+        color: blue;
+    }
+    50%{
+        color: brown;
+    }
+    75%{
+        color: coral;
+    }
+    100%{
+        color: green;
+    }
+}
+
+.mhead p{
+    animation: upperc 2s infinite;
+    animation-delay: 0.5s;
+}
+@keyframes upperc {
+    0%,80%{
+        transform: rotateX(360deg);
+    }
 }
