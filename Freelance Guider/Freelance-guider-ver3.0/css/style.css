@@ -79,6 +79,6 @@ body{
 }
 @keyframes upperc {
     0%,80%{
-        transform: rotateX(360deg);
+        transform: rotateY(360deg);
     }
 }
