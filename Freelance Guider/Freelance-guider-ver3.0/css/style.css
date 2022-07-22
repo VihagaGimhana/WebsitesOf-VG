@@ -52,7 +52,7 @@ body{
 /*Animation starts here*/
 .mhead h1{
     animation:multicolor 2s infinite;
-    animation-delay: 2s;
+    animation-delay: 0.5s;
     
 }
 @keyframes multicolor {
