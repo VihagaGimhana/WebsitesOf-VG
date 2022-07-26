@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Forms</h1>
+        <h2>Form-control</h2>
+        <!--Below you can see how to add email input in bootstrap-->
+        <h3 class="mt-3">Email inout</h3>
+        <div class="row mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <div class="form-text" id="emailhelp">Write your email here</div>
+        </div>
+        <!--Below you can see how to add text area in bootstrap-->
+        <h3 class="mt-3">Textarea input</h3>
+        <div class="row mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Your comment</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="row mb-3">
+            <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+            <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+            <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+        </div>
+        <!--Below you can see how to add readonly plaintext-->
+        <h3 class="mt-3">Readonly plaintext</h3>
+        <div class="mb-3 row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword">
+            </div>
+          </div>
+        <!--Below you can see another way to write a readonly plaintext-->
+        <form class="row g-3">
+            <div class="col-auto">
+              <label for="staticEmail2" class="visually-hidden">Email</label>
+              <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+            </div>
+            <div class="col-auto">
+              <label for="inputPassword2" class="visually-hidden">Password</label>
+              <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+            </div>
+        </form>
+        <!--Below you can see how to add file input to your website using bootstrap. There are few changes we can do in it too-->
+        <h3 class="mt-3">File input</h3>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Default file input example</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+          <div class="mb-3">
+            <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+            <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+          <div class="mb-3">
+            <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+            <input class="form-control" type="file" id="formFileDisabled" disabled>
+          </div>
+          <div class="mb-3">
+            <label for="formFileSm" class="form-label">Small file input example</label>
+            <input class="form-control form-control-sm" id="formFileSm" type="file">
+          </div>
+          <div>
+            <label for="formFileLg" class="form-label">Large file input example</label>
+            <input class="form-control form-control-lg" id="formFileLg" type="file">
+        </div>
+        <!--Below you can see how to add color picker to your website-->
+        <h3 class="mt-3">Color</h3>
+        <label for="exampleColorInput" class="form-label">Color picker</label>
+        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+        <!--Below you can see how to add datalist-->
+        <h3 class="mt-3">Datalist</h3>
+        <label for="exampleDataList" class="form-label">Datalist example</label>
+        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+        <datalist id="datalistOptions">
+        <option value="San Francisco">
+        <option value="New York">
+        <option value="Seattle">
+        <option value="Los Angeles">
+        <option value="Chicago">
+        </datalist>
+    </div>
+        <hr class="border-3 bg-dark">
+    <div class="container">
+        <h2>Select</h2>
+        <!--Below you can see how to add default select option-->
+        <h3 class="mt-3">Default</h3>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+        <!--Below you can see the sizing of select element-->
+        <h3 class="mt-3">Sizig</h3>
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          
+          <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        <!--Below you can see when multiple attribute used-->
+        <h4 class="mt-2">Multiple attribute</h4>
+        <select class="form-select" multiple aria-label="multiple select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        <!--Below you can see when size attribute used-->
+        <h4 class="mt-2">Size attribute</h4>
+        <select class="form-select" size="3" aria-label="size 3 select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+    </div>
+    <hr class="border-5 bg-dark">
+    <div class="container">
+        <h2>Checks and radios</h2>
+        <!--Below you can see how to add check box-->
+        <h3 class="mt-3">Checks</h3>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Default checkbox
+            </label>
+          </div>
+          <!--Prechecked check box-->
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Checked checkbox
+            </label>
+          </div>
+          <!--Here you can see indetermine-->
+          <h3 class="mt-3">Indeterminate</h3>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+            <label class="form-check-label" for="flexCheckIndeterminate">
+              Indeterminate checkbox
+            </label>
+          </div>
+          <!--Below you can see how to add disabled checkbox-->
+          <h3 class="mt-3">Disabled</h3>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled" disabled>
+            <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+              Disabled indeterminate checkbox
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled>
+            <label class="form-check-label" for="flexCheckDisabled">
+              Disabled checkbox
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
+            <label class="form-check-label" for="flexCheckCheckedDisabled">
+              Disabled checked checkbox
+            </label>
+          </div>
+          <!--Below you can see how to add radios to the web-->
+          <h3 class="mt-3">Radios</h3>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Default radio
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Default checked radio
+            </label>
+          </div>
+          <!--Below you can see how to disable radios-->
+          <h3 class="mt-3">Disabled</h3>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled>
+            <label class="form-check-label" for="flexRadioDisabled">
+              Disabled radio
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioCheckedDisabled" checked disabled>
+            <label class="form-check-label" for="flexRadioCheckedDisabled">
+              Disabled checked radio
+            </label>
+          </div>
+          <!--Below you can see how to add switches-->
+          <h3 class="mt-3">Swiches</h3>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" disabled>
+            <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled>
+            <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+          </div>
+          <!--Below you can see how default(stacked) situated-->
+          <h3 class="mt-3">Default(stacked)</h3>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Default checkbox
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+            <label class="form-check-label" for="defaultCheck2">
+              Disabled checkbox
+            </label>
+          </div>
+          <!--Default radio-->
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Default radio
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              Second default radio
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+            <label class="form-check-label" for="exampleRadios3">
+              Disabled radio
+            </label>
+          </div>
+
+        
+
+    </div>
+</body>
+</html>
