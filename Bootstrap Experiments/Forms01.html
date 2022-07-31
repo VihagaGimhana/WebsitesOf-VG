@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms-02</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Forms - 2nd day</h1>
+        <h2 class="text-center">Checks and radios</h2>
+         <!--Below here you can see how to set checks horizontally-->
+        <h3>Inline</h3>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox2">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+            <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+          </div> <br>
+        <!--Below here you can see how to set radios horizontally-->
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+            <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+          </div>
+          <h3 class="mt-3">Reverse</h3>
+        <!--Below here you can see how to set opposit site any checks-->
+        <div class="form-check form-check-reverse">
+            <input class="form-check-input" type="checkbox" value="" id="reverseCheck1">
+            <label class="form-check-label" for="reverseCheck1">
+              Reverse checkbox
+            </label>
+          </div>
+          <div class="form-check form-check-reverse">
+            <input class="form-check-input" type="checkbox" value="" id="reverseCheck2" disabled>
+            <label class="form-check-label" for="reverseCheck2">
+              Disabled reverse checkbox
+            </label>
+          </div>
+          <div class="form-check form-switch form-check-reverse">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckReverse">
+            <label class="form-check-label" for="flexSwitchCheckReverse">Reverse switch checkbox input</label>
+          </div>
+          <!--Set checks and radios without labels-->
+          <h2 class="mt-3">Without labels</h2>
+          <div>
+            <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+          </div>
+          
+          <div>
+            <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
+          </div>
+          <!--Below you can see the toggle buttons using checkboxes and radios-->
+          <h3 class="mt-3">Toggle Buttons</h3>
+          <!--Toggle buttons using checkbox-->
+          <h4>Checkbox toggle buttons</h4>
+          <!--Normal checkbox button-->
+          <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+          <label class="btn btn-primary" for="btn-check">Single toggle</label>
+          <!--Checked checkbox-->
+          <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+          <label class="btn btn-primary" for="btn-check-2">Checked</label>
+          <!--Disabled checkbox-->
+          <input type="checkbox" class="btn-check" id="btn-check-3" autocomplete="off" disabled>
+          <label class="btn btn-primary" for="btn-check-3">Disabled</label>
+          <!--Toggle buttons using checkbox-->
+          <h4>Radio toggle buttons</h4>
+          <!--Normal radio button-->
+          <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+        <label class="btn btn-secondary" for="option1">Checked</label>
+
+        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+        <label class="btn btn-secondary" for="option2">Radio</label>
+
+        <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" disabled>
+        <label class="btn btn-secondary" for="option3">Disabled</label>
+
+        <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+        <label class="btn btn-secondary" for="option4">Radio</label>
+        <!--We can use outlined styles for awesome button style-->
+        <h4>Outlined styles</h4>
+        <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btn-check-outlined">Single toggle</label><br>
+
+        <input type="checkbox" class="btn-check" id="btn-check-2-outlined" checked autocomplete="off">
+        <label class="btn btn-outline-secondary" for="btn-check-2-outlined">Checked</label><br>
+
+        <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
+        <label class="btn btn-outline-success" for="success-outlined">Checked success radio</label>
+
+        <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+        <label class="btn btn-outline-danger" for="danger-outlined">Danger radio</label>
+
+
+
+
+    </div>
+</body>
+</html>
