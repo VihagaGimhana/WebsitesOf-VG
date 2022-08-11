@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java-Expeiments</title>
+</head>
+<body>
+    <label for="guessNum">Write a number between 1-10</label>
+    <input type="number" class="guessNum" id="guessNum">
+    <input type="submit" value="submit guess" class="guessSub">
+    <div class="resultparam">
+        <p class="tellans"></p>
+    </div>
+
+<!-- Script starts here -->
+    <script>
+        const guessNum = document.querySelector('.guessNum');
+        const tellans = document.querySelector('.tellans');
+
+function tenNumber(){
+    const typeNum = Number(guessNum.value);
+    if(10 > typeNum > 1) {
+        tellans.textContent = 'You got it write';
+    } else if (typeNum > 10) {
+        tellans.textContent = 'you got the wrong number';
+    }
+}
+    </script>
+<!-- Script ends here -->
+</body>
+</html>
